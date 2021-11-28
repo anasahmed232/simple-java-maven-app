@@ -21,5 +21,13 @@ pipeline {
              }
          }
       }
+      stage('Deliver') { //1
+          steps {
+              sh './jenkins/scripts/deliver.sh' //2
+          }
+       }
    }
 }
+
+   
+
